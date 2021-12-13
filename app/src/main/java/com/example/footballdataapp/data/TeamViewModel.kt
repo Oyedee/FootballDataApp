@@ -15,7 +15,7 @@ class TeamViewModel @Inject constructor(
 ) : ViewModel() {
 
     fun getTeams(competitionId: String) =
-        repository.getTeams(competitionId = "2000").asLiveData()
+        repository.getTeams(competitionId = "2000").asLiveData() //the id was hardcoded because it's the only id that works with the endpoint.
 
 
     fun getTeamDetails(teamId: String) =
